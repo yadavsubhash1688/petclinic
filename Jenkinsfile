@@ -18,6 +18,7 @@ pipeline{
             }
         }
     post{
+	agent {docker 'alpine:latest'}
         always{
             echo "========always========"
         }
